@@ -147,28 +147,44 @@ class Linklist:
             current_Node = current_Node.next
         max_value.data = value
 
+    def sum_of_odd(self):
+        current_Node = self.head
+        result = 0
+        counter = 0
+        while current_Node:
+            if counter % 2 != 0:
+                result += current_Node.data
+            current_Node = current_Node.next
+            counter += 1
+        print("sum of odd index ",result)
+
+    def replace_with(self):
+        node.append('T')
+        node.append('h')
+        node.append('e')
+        node.append('/')
+        node.append('*')
+        node.append('s')
+        node.append('k')
+        node.append('y')
+        node.append('*')
+        node.append('i')
+        node.append('s')
+        node.append('/')
+        node.append('/')
+        node.append('b')
+        node.append('l')
+        node.append('u')
+        node.append('e')
+        currentNode = self.head
+        while currentNode:
+            if currentNode.data == "*" or currentNode.data == "/":
+                currentNode.data = " "
+                if currentNode.next.data == "*" or currentNode.next.data == "/":
+                    currentNode.next.next.data = currentNode.next.next.data.upper()
+                    currentNode.next = currentNode.next.next
+            currentNode = currentNode.next
+
 if __name__ == "__main__":
     node = Linklist()
-    node.append(45)
-    node.append(2)
-    node.append(3)
-    node.append(4)
-    node.append(50)
-
-    print(node)
-    # # node.clear()
-    # print(node)
-    # #node.pop_head()
-    # # node.remove(1)
-    # # node.remove(1)
-    # # node.remove(2)
-    # node.remove(30)
-    # print(node)
-    # node.remove(1)
-    # # print("size",len(node))
-    # print(node)
-    # print(node.search(5))
-    # print(node[2])
-    # node.reverse()
-    node.replace_max(58)
     print(node)

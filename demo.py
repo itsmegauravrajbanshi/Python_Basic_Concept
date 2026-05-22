@@ -25,12 +25,19 @@ def buble_sort(lst: list[int]) -> list:
             break
     # return lst
     
-lst.sort(reverse=True)
-print(lst)
+# lst.sort(reverse=True)
+# print(lst)
 
 # print("----")
 # print(buble_sort(lst))
 new_lst = [330, 302, 202]
 
-lst.extend(new_lst)
-print(lst)
+# lst.extend(new_lst)
+# print(lst)
+
+d1 = dict()
+
+d1['python'] = 56
+d1['android'] = 100
+
+print(d1.keys)
